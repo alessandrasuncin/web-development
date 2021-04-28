@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurant Menu</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="The best pizza restaurant ever!"> 
+        <meta name="Keywords" content="pizza, restaurant">
+
+        <meta name="author" content="Alessandra Suncin">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="stylesheet" href="C:\Users\jerem\Desktop\Alessandra\Projects\web-development\CSS\style.css" />
+    </head>
+    <body>
+        <header id="main-header">
+            <br /><h1>THE BEST PIZZA EVER</h1><br />
+            <h3>You have never tasted anything better</h3><br />
+        </header>
+ 
+        <main>
+            <section>
+                <h2>Our Story</h2>
+                <p>We started this restaurant in 2005 to bring the taste of our homecountry to Canada</p>
+            </section>
+
+            <section>
+                <menu>
+                    <table id="menu-table">
+                        <caption>Pizza Menu</caption>
+                        <tr>
+                            <th></th>
+                            <th>Type</th>
+                            <th>Ingredients</th>
+                            <th>Price</th>
+                        </tr>
+
+                        <tr>
+                            <td width="30%"><div class="menu-img" style="background:url(margherita.jpg)"></div></td>
+                            <td>Margherita</td>
+                            <td>Mozzarela, Tomato, Basil</td>
+                            <td>$8.99</td>
+                        </tr>
+                        <tr>
+                            <td><div class="menu-img" style="background:url(pepperoni.jpg)"></div></td>
+                            <td>Pepperoni</td>
+                            <td>Mozzarela, Pepperoni</td>
+                            <td>$10.99</td>
+                        </tr>
+                        <tr>
+                            <td><div class="menu-img" style="background:url(meat_lovers.jpg)"></div></td>
+                            <td>Meat Lovers</td>
+                            <td>Mozzarela, Bacon, Pepperoni, Sausage</td>
+                            <td>$12.99</td>
+                        </tr>
+                        <tr>
+                            <td><div class="menu-img" style="background:url(frang_catupiry.png)"></div></td>
+                            <td>Frango Catupiry/Chicken Catupiry</td>
+                            <td>Brazilian Specialty: Chicken, Catupiry</td>
+                            <td>$12.99</td>
+                        </tr>
+                    </table>
+                </menu>
+            </section>
+            
+            <section id="contact-form">
+                <h2>Place Order</h2>
+                <form method="GET" action="place-order.php">
+                    <h4>Delivery</h4>
+                    <input name="deliveryMethod" type="radio" value="delivery" /> Delivery<br />
+                    <input name="deliveryMethod" type="radio" value="pickup" /> Pickup<br />
+
+
+                    <h4>Address</h4>
+                    <input name="address1" placeholder="Address Line 1" class="lg-input"/><br />
+                    <input name="address2" placeholder="Address Line 1" class="lg-input"/><br />
+
+                    <input name="city" placeholder="City" class="sm-input"/>
+                    <input name="province" placeholder="Province" class="sm-input"/><br />
+                    <input name="PostalCode" placeholder="Postal Code" class="sm-input"/>
+                    <br />
+                    <br />
+
+
+                    <h4>Size</h4>
+                    <select name="size">
+                        <option value="12">"12" - $13.99</option>
+                        <option value="16">"16" - $16.99</option>
+                        <option value="18">"18" - $19.99</option>
+                        <option value="72">"72" - $149.99</option>
+                    </select>
+
+
+
+                    <h4>Ingredients</h4>
+                    <input name="ingredient" type="checkbox" value="pepperoni" /> Pepperoni<br />
+                    <input name="ingredient" type="checkbox" value="salami"/> Salami<br />
+                    <input name="ingredient" type="checkbox" value="bacon" /> Bacon<br />
+                    <input name="ingredient" type="checkbox" value="sausage"/> Sausage<br />
+                    <input name="ingredient" type="checkbox" value="onion"/> Onion<br />
+                    <input name="ingredient" type="checkbox" value="peppers"/> Pepper<br />
+
+                    <br /><br />
+                    <button type="submit">Place Order</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>&copy 2021</footer>
+        <footer><a href="">Terms and conditions</a></footer>
+
+    </body>
+
+</html>
